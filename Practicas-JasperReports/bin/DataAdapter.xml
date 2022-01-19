@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>JasperReports-Pruebas</name><driver>com.mysql.jdbc.Driver</driver><username>root</username><password>holamundo96</password><savePassword>true</savePassword><url>jdbc:mysql://localhost:3306/jasperreports?useSSL=false&amp;useTimezone=true&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true</url><database></database><serverAddress></serverAddress><classpath>D:\Users\F996\Repo-Recursos\mysql-connector-java-8.0.18.jar</classpath></jdbcDataAdapter>

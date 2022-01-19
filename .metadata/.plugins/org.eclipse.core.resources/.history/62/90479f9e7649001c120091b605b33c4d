@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="elecciones" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="01429186-0129-4869-9ba7-8cf2747fc095">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[amFzcGVycmVwb3J0cy5lbGVjY2lvbiBBUyAsMTc2LDU0LDY1MmRmMmQ4LTM1MDUtNDI4Yi1iNmM3
+LTgwOGJhNjk2ZmQwNDs=]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MYSQL-CONNECTOR"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT jasperreports.eleccion.id,
+	jasperreports.eleccion.candidato,
+	jasperreports.eleccion.partido,
+	jasperreports.eleccion.votos
+FROM jasperreports.eleccion]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="eleccion"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="candidato" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="candidato"/>
+		<property name="com.jaspersoft.studio.field.label" value="candidato"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="eleccion"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="partido" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="partido"/>
+		<property name="com.jaspersoft.studio.field.label" value="partido"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="eleccion"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="votos" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="votos"/>
+		<property name="com.jaspersoft.studio.field.label" value="votos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="eleccion"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="66" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="7" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="356" splitType="Stretch">
+			<pie3DChart>
+				<chart evaluationTime="Report">
+					<reportElement x="250" y="156" width="307" height="200" uuid="0d252035-ff61-4c39-b196-6d0d048b2f9c"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<dataset resetType="Report"/>
+					<keyExpression><![CDATA[$F{votos}]]></keyExpression>
+					<valueExpression><![CDATA[$F{partido}]]></valueExpression>
+					<labelExpression><![CDATA[$F{partido}]]></labelExpression>
+					<otherKeyExpression><![CDATA[]]></otherKeyExpression>
+					<otherLabelExpression><![CDATA[]]></otherLabelExpression>
+				</pieDataset>
+				<pie3DPlot>
+					<plot/>
+					<itemLabel/>
+				</pie3DPlot>
+			</pie3DChart>
+		</band>
+	</summary>
+</jasperReport>

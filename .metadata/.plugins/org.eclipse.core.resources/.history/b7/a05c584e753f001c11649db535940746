@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="da84a33a-c413-4da0-9331-a450e925c172">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[ZmFjdC5mYWN0dXJhY2lvbiAsMTUsMTUsYTMxZTlhNGUtNTIyZS00NjRmLWIyYzktMjUwYzY1ZmIx
+MmI1O2ZhY3QuY2xpZW50ZXMgLDIwMyw0MixhN2RmZjU3ZC1hNDI3LTQ5ODEtYTNiMS0yNzgwNGIx
+ZWNkZTA7]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MYSQL-CONNECTOR"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT fact.facturacion.id_facturacion,
+	fact.facturacion.clientes_id_cliente,
+	fact.facturacion.usuarios_id_usuario,
+	fact.facturacion.condicion,
+	fact.facturacion.fecha,
+	fact.facturacion.numero,
+	fact.facturacion.estado,
+	fact.clientes.id_cliente,
+	fact.clientes.nombres,
+	fact.clientes.apellidos,
+	fact.clientes.ruc
+FROM fact.facturacion
+	INNER JOIN fact.clientes ON 
+	 fact.facturacion.clientes_id_cliente = fact.clientes.id_cliente]]>
+	</queryString>
+	<field name="id_facturacion" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_facturacion"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_facturacion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturacion"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="clientes_id_cliente" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="clientes_id_cliente"/>
+		<property name="com.jaspersoft.studio.field.label" value="clientes_id_cliente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturacion"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="usuarios_id_usuario" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="usuarios_id_usuario"/>
+		<property name="com.jaspersoft.studio.field.label" value="usuarios_id_usuario"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturacion"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="condicion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="condicion"/>
+		<property name="com.jaspersoft.studio.field.label" value="condicion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturacion"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fecha" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="fecha"/>
+		<property name="com.jaspersoft.studio.field.label" value="fecha"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturacion"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numero" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="numero"/>
+		<property name="com.jaspersoft.studio.field.label" value="numero"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturacion"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estado" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estado"/>
+		<property name="com.jaspersoft.studio.field.label" value="estado"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturacion"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_cliente" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_cliente"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_cliente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombres" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombres"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombres"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellidos" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.label" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ruc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ruc"/>
+		<property name="com.jaspersoft.studio.field.label" value="ruc"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="id_facturacion">
+		<groupExpression><![CDATA[$F{id_facturacion}]]></groupExpression>
+	</group>
+	<group name="clientes_id_cliente">
+		<groupExpression><![CDATA[$F{clientes_id_cliente}]]></groupExpression>
+	</group>
+	<group name="usuarios_id_usuario">
+		<groupExpression><![CDATA[$F{usuarios_id_usuario}]]></groupExpression>
+	</group>
+	<group name="condicion">
+		<groupExpression><![CDATA[$F{condicion}]]></groupExpression>
+	</group>
+	<group name="fecha">
+		<groupExpression><![CDATA[$F{fecha}]]></groupExpression>
+	</group>
+	<group name="numero">
+		<groupExpression><![CDATA[$F{numero}]]></groupExpression>
+	</group>
+	<group name="estado">
+		<groupExpression><![CDATA[$F{estado}]]></groupExpression>
+	</group>
+	<group name="id_cliente">
+		<groupExpression><![CDATA[$F{id_cliente}]]></groupExpression>
+	</group>
+	<group name="nombres">
+		<groupExpression><![CDATA[$F{nombres}]]></groupExpression>
+	</group>
+	<group name="apellidos">
+		<groupExpression><![CDATA[$F{apellidos}]]></groupExpression>
+	</group>
+	<group name="ruc">
+		<groupExpression><![CDATA[$F{ruc}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

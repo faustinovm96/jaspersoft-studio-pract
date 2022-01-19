@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="padron_electoral" columnCount="2" pageWidth="240" pageHeight="141" columnWidth="100" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c8604a9c-f01b-440a-b885-6a7786074b93">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[amFzcGVycmVwb3J0cy5wYWRyb25fZWxlY3RvcmFsIEFTICwyNSwxMCw5NDc5MGNlOC1lZjk5LTQz
+N2MtOGI3OS1lMTM0YTk1YjZmMzI7]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MYSQL-CONNECTOR"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT jasperreports.padron_electoral.ci,
+	jasperreports.padron_electoral.second_name,
+	jasperreports.padron_electoral.people_name,
+	jasperreports.padron_electoral.lastname1,
+	jasperreports.padron_electoral.num_table,
+	jasperreports.padron_electoral.lastname2,
+	jasperreports.padron_electoral.data_matrix
+FROM jasperreports.padron_electoral]]>
+	</queryString>
+	<field name="ci" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ci"/>
+		<property name="com.jaspersoft.studio.field.label" value="ci"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="padron_electoral"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="second_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="second_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="second_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="padron_electoral"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="people_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="people_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="people_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="padron_electoral"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lastname1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="lastname1"/>
+		<property name="com.jaspersoft.studio.field.label" value="lastname1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="padron_electoral"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="num_table" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="num_table"/>
+		<property name="com.jaspersoft.studio.field.label" value="num_table"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="padron_electoral"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lastname2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="lastname2"/>
+		<property name="com.jaspersoft.studio.field.label" value="lastname2"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="padron_electoral"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data_matrix" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="data_matrix"/>
+		<property name="com.jaspersoft.studio.field.label" value="data_matrix"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="padron_electoral"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
