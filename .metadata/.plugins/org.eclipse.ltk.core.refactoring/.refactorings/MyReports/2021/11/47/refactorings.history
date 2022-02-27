@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move 8 elements to &apos;fotos&apos;&#x0D;&#x0A;- Original project: &apos;MyReports&apos;&#x0D;&#x0A;- Destination element: &apos;fotos&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     7777777.jpg&#x0D;&#x0A;     8888888.jpg&#x0D;&#x0A;     6666666.jpg&#x0D;&#x0A;     4444444.jpg&#x0D;&#x0A;     5555555.jpg&#x0D;&#x0A;     3333333.jpg&#x0D;&#x0A;     1111111.jpg&#x0D;&#x0A;     2222222.jpg&#x0D;&#x0A;- Update references to refactored element" description="Move files" element1="7777777.jpg" element2="8888888.jpg" element3="6666666.jpg" element4="4444444.jpg" element5="5555555.jpg" element6="3333333.jpg" element7="1111111.jpg" element8="2222222.jpg" files="8" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1637356286892" target="fotos" units="0" version="1.0"/>
-</session>
